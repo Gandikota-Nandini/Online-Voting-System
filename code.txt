@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMart Ecommerce Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="SkyMart Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super Value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Feature Section-->
+     <section id ="feature" class ="section-p1">
+
+
+
+        <div class="fe-box">
+            <img src="img/features/f1.jpg"  alt="image">
+            <h3>Free Shipping</h3>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.jpg"  alt="image">
+            <h3>Online Order</h3>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.jpg"  alt="image">
+            <h3>Save Money</h3>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.jpg" alt="image">
+            <h3>Promotions</h3>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.jpg"  alt="image">
+            <h3>Happy Sell</h3>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.jpg"  alt="image">
+            <h3>F24/7 Support</h3>
+        </div>
+
+
+
+     </section>
+
+     <section id="product1" class="section-p1">
+
+     <h2>Featured Products</h2>
+     <p>Summer Collection New Mordern Design</p>
+     <div class="pro-container">
+        <div class="pro">
+            <img src = "img/products/j1.jpg" alt="img1">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astronaut T-Shirts</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+</div>
+
+           
+     </div>
+</section>
+   
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+ 
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+.section-p1
+{
+    padding: 80px 80px;
+}
+
+
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+/* Header Styling */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+   
+    box-shadow: 0 5px 15px rgba(162, 27, 27, 0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+    background-color:#E3E6F3;
+   
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color:rgba(162, 27, 27, 0.06)
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+}
+
+/* Hero Section Styling */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center ;
+    padding: 80px;
+    flex-direction: column;
+    background-image: url("img/hero4.jpg") ;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    height: 90vh;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: palegoldenrod;
+}
+
+#hero h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#hero h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+#hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#088178;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#hero button {
+    background-image: url("img/buttons.jpg");
+    background-color: transparent;
+    color:#065f5b;
+    border:20px;
+    width: 200px;
+    height:50px;
+    padding: 14px 55px 14px 50px;
+    white-space: nowrap;
+    font-size:20px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+
+}
+/* hero page */
+
+#hero button:hover {
+    background-color: #065f5b;
+}
+
+
+
+
+
+#feature .fe-box:hover
+{
+
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15;
+    background-color: grey;
+    padding: 40px 40px;
+}
+
+#feature .fe-box {
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 8x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#feature .fe-box img {
+    width: 140px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#feature .fe-box h3 {
+    font-size: 18px;
+    padding: 8px;
+    line-height: 1.2;
+    border-radius: 6px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+
+#product1 {
+   
+    text-align: center;
+ 
+}
+
+#product1 .pro
+{
+    width:23%;
+    min-width:250px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+    margin: 15px 0;
+    transition : 0.2s ease;
+
+}
+
+#product1 .pro:hover
+{
+    box-shadow : 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+
+#product1 .pro img{
+    width:100%;
+    border-radius :20px;
+}
+
+#product1 .pro .des
+{
+    text-align: start;
+    padding: 10px 0 ;
+}
+
+#product1 .pro.des span{
+
+    color:  #606063;
+    font-size: 12px;
+}
+
+
+#product1 .pro .des h5
+{
+   padding-top: 7px;
+   color: #1a1a1a;
+   font-size: 14px;
+}
+
+#product1 .pro .des i
+{
+   font-size: 12px;
+   color: rgb(243,181,25);
+
+}
+
+
+
+#product1 .pro .des h4
+{
+   padding-top: 7px;
+   font-size: 15px;
+   font-weight:700;
+   color: #088178;
+
+}
+
+
+
+#product1 .pro .cart
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+
+}
+
+
+
+
+/* Shop Page */
+
+
+/* Single Product */
+
+
+
+
+/* Blog Page */
+/* About Page */
+
+Get Outlook for iOS
