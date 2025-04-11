@@ -1,4 +1,4 @@
-import './CSS/team.css'
+/*import './CSS/team.css'
 import { useEffect, React, useRef } from 'react';
 import ScrollReveal from "scrollreveal";
 import { SocialIcon } from 'react-social-icons'
@@ -94,4 +94,4 @@ const Team = () => {
         </div>
     )
 }
-export default Team;
+export default Team;*/
